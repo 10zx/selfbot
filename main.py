@@ -1,10 +1,13 @@
 from pynput.keyboard import Key, Controller
 import time
 
+# Establish Keyboard
 keyboard = Controller()
 
+# Time to click client
 time.sleep(10)
 
+# Main Loop
 while True:
     # Key in !d bump
     keyboard.press('!')
@@ -26,7 +29,8 @@ while True:
     keyboard.release(Key.enter)
     
     print('server !d bumped')
-
+    
+    # Sleep
     for i in range(7210, 0, -1):
         time.sleep(1)
         print(f'sleeping for {i} more seconds')
