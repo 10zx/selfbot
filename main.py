@@ -3,11 +3,9 @@ import time
 
 keyboard = Controller()
 
-time.sleep(3)
+time.sleep(10)
 
 while True:
-    time.sleep(1)
-
     # Key in !d bump
     keyboard.press('!')
     keyboard.release('!')
